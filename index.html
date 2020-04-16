@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VIPUI exmaples</title>
+    <link rel="stylesheet" href="./dist/css/vipui.css">
+    <link href="./dist/css/rainbow.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./dist/css/font-awesome.css">
+    <link rel="stylesheet" href="./dist/css/normalize.css">
+</head>
+
+<body class="vipui">
+
+    <h3 id="btnButton">Buttons 按钮</h3>
+
+    <div class="content">
+        <h4>Button Category 按钮分类</h4>
+
+        <p>
+            <button type="button" class="default">default button</button>
+            <button type="button" class="default ghost">ghost default button</button>
+            <button type="button" class="brand">brand button</button>
+            <button type="button" class="brand ghost">ghost brand button</button>
+            <button type="button" disabled class="default">disabled button</button>
+            <button type="button" disabled class="default ghost">disabled button</button>
+        </p>
+
+        <p>
+            <button type="button" class="brand block">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+                <span>block button</span>
+            </button>
+            <button type="button" class="brand ghost block">ghost block button</button>
+        </p>
+
+        <pre>
+            <code data-language="html">
+                <!-- normal button -->
+                <button type="button" class="default">default button</button>
+                <button type="button" class="default ghost">ghost default button</button>
+                <button type="button" class="brand">brand button</button>
+                <button type="button" class="brand ghost">ghost brand button</button>
+                <button type="button" disabled class="default">disabled button</button>
+                <button type="button" disabled class="default ghost">disabled button</button>
+
+                <!-- block button -->
+                <button type="button" class="brand block">block button</button>
+                <button type="button" class="brand ghost block">ghost block button</button>
+            </code>
+        </pre>
+
+        <h4>Button Icon 图标按钮</h4>
+
+        <p>
+            <button type="button" class="icon">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="icon brand">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="default">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+                <span>default button</span>
+            </button>
+            <button type="button" class="brand">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+                <span>brand button</span>
+            </button>
+            <button type="button" class="default ghost">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+                <span>ghost default button</span>
+            </button>
+        </p>
+
+        <pre>
+            <code data-language="html">
+                <!-- icon buttons -->
+                <button type="button" class="icon">
+                    <i class="icon fa fa-bath" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="icon brand">
+                    <i class="icon fa fa-bath" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="default">
+                    <i class="icon fa fa-bath" aria-hidden="true"></i>
+                    <span>default button</span>
+                </button>
+
+                <button type="button" class="brand">
+                    <i class="icon fa fa-bath" aria-hidden="true"></i>
+                    <span>brand button</span>
+                </button>
+
+                <button type="button" class="default ghost">
+                    <i class="icon fa fa-bath" aria-hidden="true"></i>
+                    <span>ghost default button</span>
+                </button>
+            </code>
+        </pre>
+
+        <h4>Text Button 文本按钮 Todo</h4>
+
+        <h4>Button Size 按钮尺寸</h4>
+
+        <p>
+            <button type="button" class="mini">mini size</button>
+            <button type="button" class="mini brand">mini size & brand color</button>
+        </p>
+
+        <p>
+            <button type="button" class="small">small size</button>
+            <button type="button" class="small brand">small size & brand color</button>
+        </p>
+
+        <p>
+            <button type="button" class="default">default size</button>
+            <button type="button" class="default brand">default size & brand color</button>
+        </p>
+
+        <p>
+            <button type="button" class="large">large size</button>
+            <button type="button" class="large brand">large size & brand color</button>
+        </p>
+
+        <p>
+            <button type="button" class="huge bold">huge size</button>
+            <button type="button" class="huge brand bold">huge size & brand color</button>
+        </p>
+
+        <pre>
+            <code data-language="html">
+                <!-- mini size button -->
+                <button type="button" class="mini">mini size</button>
+                <button type="button" class="mini brand">mini size & brand color</button>
+                
+                <!-- small size button -->
+                <button type="button" class="small">small size</button>
+                <button type="button" class="small brand">small size & brand color</button>
+                
+                <!-- default size button -->
+                <button type="button" class="default">default size</button>
+                <button type="button" class="default brand">default size & brand color</button>
+                
+                <!-- large size button -->
+                <button type="button" class="large">large size</button>
+                <button type="button" class="large brand">large size & brand color</button>
+                
+                <!-- huge size button -->
+                <button type="button" class="huge bold">huge size</button>
+                <button type="button" class="huge brand bold">huge size & brand color</button>
+            
+            </code>
+        </pre>
+    </div>
+
+    <h3>Forms 表单</h3>
+
+    <div class="content">
+        <h4>Text Input 文本框</h4>
+
+        <p>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" class="error" />
+        </p>
+
+        <p>
+            <textarea name="" id="" cols="50" rows="8" placeholder="Message..."></textarea>
+        </p>
+
+        <pre>
+            <code data-language="html">
+                <!-- input box -->
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" class="error" />
+                
+                <!-- textarea -->
+                <textarea name="" id="" cols="50" rows="8" placeholder="Message..."></textarea>
+            
+            </code>
+        </pre>
+
+        <h4>Input Group 文本框组</h4>
+
+        <p>
+            <span class="input-group" style="width: 320px">
+                <input type="text" placeholder="Enter your email for newsletter">
+                <span class="input-group-button">
+                    <button type="button" class="default">Subscribe</button>
+                </span>
+            </span>
+        </p>
+
+        <p>
+            <span class="input-group" style="width: 320px">
+                <span class="input-group-button">
+                    <button type="button" class="default">Validate</button>
+                </span>
+            <input type="password" placeholder="Your password" />
+            </span>
+        </p>
+
+        <pre>
+            <code data-language="html">
+                <!-- input group -->
+                <span class="input-group" style="width: 320px">
+                    <input type="text" placeholder="Enter your email for newsletter">
+                    <span class="input-group-button">
+                        <button type="button" class="default">Subscribe</button>
+                    </span>
+                </span>
+                
+                <!-- input group -->
+                <span class="input-group" style="width: 320px">
+                    <span class="input-group-button">
+                        <button type="button" class="default">Validate</button>
+                    </span>
+                    <input type="password" placeholder="Your password" />
+                </span>
+            
+            </code>
+        </pre>
+
+
+        <h4>Radio Box 单选框</h4>
+
+        <p>
+            <span class="radiobox">
+                <input id="rdApple" type="radio" name="rdFruitGroup">
+                <label class="radio-label" for="rdApple">Apple</label>
+            </span>
+
+            <span class="radiobox">
+                <input id="rdBanana" type="radio" name="rdFruitGroup" checked>
+                <label class="radio-label" for="rdBanana">Banana</label>
+            </span>
+
+            <span class="radiobox">
+                <input id="rdPeach" type="radio" name="rdFruitGroup">
+                <label class="radio-label" for="rdPeach">Peach</label>
+            </span>
+        </p>
+
+        <pre>
+            <code data-language="html">
+
+                <span class="radiobox">
+                    <input id="rdApple" type="radio" name="radio-fruit-group" checked />
+                    <label class="radio-label" for="rdApple">Apple</label>
+                </span>
+
+                <span class="radiobox">
+                    <input id="rdBanana" type="radio" name="radio-fruit-group" />
+                    <label class="radio-label" for="rdBanana">Banana</label>
+                </span>
+
+                <span class="radiobox">
+                    <input id="rdPeach" type="radio" name="radio-fruit-group" />
+                    <label class="radio-label" for="rdPeach">Peach</label>
+                </span>
+        
+            </code>
+        </pre>
+
+
+        <h4>Check Box 复选框</h4>
+
+        <p>
+            <span class="checkbox">
+                <input id="cbPeach" type="checkbox" name="cbFruitGroup" checked />
+                <label class="checkbox-label" for="cbPeach">Peach</label>
+            </span>
+
+            <span class="checkbox">
+                <input id="cbApple" type="checkbox" name="cbFruitGroup" />
+                <label class="checkbox-label" for="cbApple">Apple</label>
+            </span>
+
+            <span class="checkbox">
+                <input id="cbBanana" type="checkbox" name="cbFruitGroup" checked />
+                <label class="checkbox-label" for="cbBanana">Banana</label>
+            </span>
+        </p>
+
+        <pre>
+            <code data-language="html">
+
+                <span class="checkbox">
+                    <input id="cbPeach" type="checkbox" name="checkbox-fruit-group" checked />
+                    <label class="checkbox-label" for="cbPeach">Peach</label>
+                </span>
+
+                <span class="checkbox">
+                    <input id="cbApple" type="checkbox" name="checkbox-fruit-group" />
+                    <label class="checkbox-label" for="cbApple">Apple</label>
+                </span>
+
+                <span class="checkbox">
+                    <input id="cbBanana" type="checkbox" name="checkbox-fruit-group" />
+                    <label class="checkbox-label" for="cbBanana">Banana</label>
+                </span>
+        
+            </code>
+        </pre>
+
+
+        <h4>Select Box 下拉框</h4>
+
+        <p>
+            <div class="selectbox">
+                <select>
+                    <option>Apples</option>
+                    <option>Bananas</option>
+                    <option>Grapes</option>
+                    <option>Oranges</option>
+                    <option>A very long option name to test wrapping and visual collisions</option>
+                </select>
+            </div>
+        </p>
+
+        <pre>
+            <code data-language="html">
+
+            <div class="selectbox">
+                <select>
+                    <option>Apples</option>
+                    <option>Bananas</option>
+                    <option>Grapes</option>
+                    <option>Oranges</option>
+                    <option>A very long option name to test wrapping and visual collisions</option>
+                </select>
+            </div>
+        
+            </code>
+        </pre>
+
+        <h4>Avatar 头像框</h4>
+
+        <div class="row">
+            <div class="grid-4">
+                <img src="https://placekitten.com/g/200/200" class="avatar circle" />
+            </div>
+            <div class="grid-4">
+                <img src="https://placekitten.com/g/200/200" class="avatar rounded" />
+            </div>
+            <div class="grid-4">
+                <img src="https://placekitten.com/g/200/200" class="avatar rounded thumbnail" />
+            </div>
+        </div>
+
+        <pre>
+            <code data-language="html">
+                <img src="https://placekitten.com/g/200/200" class="avatar circle" />
+                <img src="https://placekitten.com/g/200/200" class="avatar rounded" />
+                <img src="https://placekitten.com/g/200/200" class="avatar rounded thumbnail" />
+            </code>
+        </pre>
+    </div>
+
+    <h3>Grid System 网格系统</h3>
+
+    <div class="content">
+        <h4>Standard Grid 标准网格</h4>
+
+        <div>
+            <div class="row show-row">
+                <div class="grid-12">.grid-12</div>
+            </div>
+            <div class="row show-row">
+                <div class="grid-6">.grid-6</div>
+                <div class="grid-6">.grid-6</div>
+            </div>
+            <div class="row show-row">
+                <div class="grid-4">.grid-4</div>
+                <div class="grid-4">.grid-4</div>
+                <div class="grid-4">.grid-4</div>
+            </div>
+            <div class="row show-row">
+                <div class="grid-3">.grid-3</div>
+                <div class="grid-3">.grid-3</div>
+                <div class="grid-3">.grid-3</div>
+                <div class="grid-3">.grid-3</div>
+            </div>
+            <div class="row show-row">
+                <div class="grid-2">.grid-2</div>
+                <div class="grid-2">.grid-2</div>
+                <div class="grid-2">.grid-2</div>
+                <div class="grid-2">.grid-2</div>
+                <div class="grid-2">.grid-2</div>
+                <div class="grid-2">.grid-2</div>
+            </div>
+            <div class="row show-row">
+                <div class="grid-4">.grid-4</div>
+                <div class="grid-8">.grid-8</div>
+            </div>
+            <div class="row show-row">
+                <div class="grid-8 center">.grid-8.center</div>
+            </div>
+        </div>
+
+        <h4>Offset Grid 偏差网格</h4>
+        <div>
+            <div class="row show-row">
+                <div class="grid-2 offset-1">.grid-2.offset-1</div>
+                <div class="grid-4 offset-2">.grid-4.offset-2</div>
+            </div>
+            <div class="row show-row">
+                <div class="grid-1 offset-1">.grid-1.offset-1</div>
+                <div class="grid-1 offset-1">.grid-1.offset-1</div>
+                <div class="grid-1 offset-1">.grid-1.offset-1</div>
+                <div class="grid-1 offset-1">.grid-1.offset-1</div>
+                <div class="grid-1 offset-1">.grid-1.offset-1</div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Navs 导航</h3>
+
+    <div class="content">
+        <h4>Tabs 标签导航</h4>
+
+        <div class="row-margin">
+            <ul class="nav tabs">
+                <li class="active">
+                    <a href="#">
+                        Onsale
+                        <i class="number">30</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        Comming Soon
+                        <i class="number">100</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        Sold out
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <pre>
+            <code data-language="html">
+                <ul class="nav tabs">
+                    <li class="active">
+                        <a href="#">
+                            Onsale
+                            <i class="number">30</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Comming Soon
+                            <i class="number">100</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Sold out
+                        </a>
+                    </li>
+                </ul>
+            </code>
+        </pre>
+
+        <div class="row-margin">
+            <ul class="nav tabs top">
+                <li class="active">
+                    <a href="#">
+                        Onsale
+                        <i class="number">30</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        Comming Soon
+                        <i class="number">100</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        Sold out
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <pre>
+            <code data-language="html">
+                <ul class="nav tabs top">
+                    <li class="active">
+                        <a href="#">
+                            Onsale
+                            <i class="number">30</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Comming Soon
+                            <i class="number">100</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Sold out
+                        </a>
+                    </li>
+                </ul>
+            </code>
+        </pre>
+
+        <h4>Sides 侧边导航</h4>
+
+        <div class="row-margin">
+            <ul class="nav sides">
+                <li class="active">
+                    <a href="#">
+                        My Orders
+                        <i class="number">30</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        My Coupons
+                        <i class="number">100</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        Wish List
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <pre>
+            <code data-language="html">
+                <ul class="nav sides">
+                    <li class="active">
+                        <a href="#">
+                            Onsale
+                            <i class="number">30</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Comming Soon
+                            <i class="number">100</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Sold out
+                        </a>
+                    </li>
+                </ul>
+            </code>
+        </pre>
+
+        <div class="row-margin">
+            <ul class="nav sides right">
+                <li class="active">
+                    <a href="#">
+                        My Orders
+                        <i class="number">30</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        My Coupons
+                        <i class="number">100</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        Wish List
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <pre>
+            <code data-language="html">
+                <ul class="nav sides right">
+                    <li class="active">
+                        <a href="#">
+                            Onsale
+                            <i class="number">30</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Comming Soon
+                            <i class="number">100</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Sold out
+                        </a>
+                    </li>
+                </ul>
+            </code>
+        </pre>
+
+        <h4>Pagination 分页</h4>
+
+        <p>
+            <ul class="pagination">
+                <li class="pagination-prev">
+                    <a href="javascript:;"></a>
+                </li>
+                <li>
+                    <a href="javascript:;">1</a>
+                </li>
+                <li>
+                    <a href="javascript:;">2</a>
+                </li>
+                <li class="active">
+                    <a href="javascript:;">3</a>
+                </li>
+                <li>
+                    <span>...</span>
+                </li>
+                <li>
+                    <a href="javascript:;">100</a>
+                </li>
+                <li class="pagination-next">
+                    <a href="javascript:;"></a>
+                </li>
+            </ul>
+        </p>
+
+        <pre>
+            <code data-language="html">
+                <ul class="pagination">
+                    <li class="pagination-prev"></li>
+                    <li>
+                        <a href="javascript:;">1</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">2</a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">3</a>
+                    </li>
+                    <li>
+                        <span>...</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">100</a>
+                    </li>
+                    <li class="pagination-next"></li>
+                </ul>
+            </code>
+        </pre>
+    </div>
+
+    <h3>Typography 文字排版</h3>
+
+    <div class="content">
+        <h4>Pragraph 段落</h4>
+
+        <div>
+            <p>The basic rule of thumb with paragraphing is to keep one idea to one paragraph. If you begin to transition into a new idea, it belongs in a new paragraph. There are some simple ways to tell if you are on the same topic or a new one. You can
+                have one idea and several bits of supporting evidence within a single paragraph. You can also have several points in a single paragraph as long as they relate to the overall topic of the paragraph. If the single points start to get long,
+                then perhaps elaborating on each of them and placing them in their own paragraphs is the route to go.
+            </p>
+
+            <p>我们向那房子走去，这房子果然很小，很矮；屋檐下，墙壁上，到处挂着面粉的白絮儿，似乎这里永远是冬天呢。有一家人正在那里磨面，粉面儿迷蒙，雷一样的石磨声使人耳聋。我们推开东边那个小门，这是那老女人的住处：一个偌大的土炕，炕上一堆儿各色布头；一盆旺火在脚底烧着，暖融融的；窗台上一盆什么花草儿，出奇得竟开了三朵四朵白花。</p>
+        </div>
+
+        <h4>Title 标题</h4>
+
+        <div>
+            <h1>h1 标题一</h1>
+            <h2>h2 标题二</h2>
+            <h3>h3 标题三</h3>
+            <h4>h4 标题四</h4>
+            <h5>h5 标题五</h5>
+            <h6>h6 标题六</h6>
+        </div>
+
+        <h4>Others 其他元素</h4>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <code data-language="html"><em></code>
+                    </td>
+                    <td>
+                        <em>I'm an em element</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><strong></code>
+                    </td>
+                    <td>
+                        <strong>I'm an strong element</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><code></code>
+                    </td>
+                    <td>
+                        <code>I'm an code element</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><del></code>
+                    </td>
+                    <td>
+                        <del>I'm an del element</del>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><ins></code>
+                    </td>
+                    <td>
+                        <ins>I'm an ins element</ins>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><mark></code>
+                    </td>
+                    <td>
+                        <mark>I'm an mark element</mark>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><q></code>
+                    </td>
+                    <td>
+                        <q>I'm an q element</q>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><abbr></code>
+                    </td>
+                    <td>
+                        <abbr>I'm an abbr element</abbr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><dfn></code>
+                    </td>
+                    <td>
+                        <dfn>I'm an dfn element</dfn>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code data-language="html"><small></code>
+                    </td>
+                    <td>
+                        <small>I'm an small element</small>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h4>Table 表格</h4>
+
+        <div>
+
+            <h5>Basic table 基础样式</h5>
+
+            <div class="table full font-small">
+                <div class="table-head text-center">
+                    <div class="table-cell">
+                        Item
+                    </div>
+                    <div class="table-cell">
+                        Unit Price
+                    </div>
+                    <div class="table-cell">
+                        Countdown
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Black Dress
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$199.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 2 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Red T-shirt
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$59.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 18 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Yellow Pants
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$19.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 08:12:33
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Green Hat
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$9.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 00:23:34
+                    </div>
+                </div>
+            </div>
+
+            <h5>Basic styled table 基础美化样式</h5>
+
+            <div class="table styled full font-small">
+                <div class="table-head text-center">
+                    <div class="table-cell">
+                        Item
+                    </div>
+                    <div class="table-cell">
+                        Unit Price
+                    </div>
+                    <div class="table-cell">
+                        Countdown
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Black Dress
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$199.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 2 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Red T-shirt
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$59.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 18 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Yellow Pants
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$19.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 08:12:33
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Green Hat
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$9.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 00:23:34
+                    </div>
+                </div>
+            </div>
+
+            <h5>Bordered styled table 带边美化样式</h5>
+
+            <div class="table styled bordered full font-small">
+                <div class="table-head text-center">
+                    <div class="table-cell">
+                        Item
+                    </div>
+                    <div class="table-cell">
+                        Unit Price
+                    </div>
+                    <div class="table-cell">
+                        Countdown
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Black Dress
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$199.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 2 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Red T-shirt
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$59.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 18 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Yellow Pants
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$19.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 08:12:33
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Green Hat
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$9.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 00:23:34
+                    </div>
+                </div>
+            </div>
+
+            <h5>Grid styled table 格子边框美化样式</h5>
+
+            <div class="table styled grid full font-small">
+                <div class="table-head text-center">
+                    <div class="table-cell">
+                        Item
+                    </div>
+                    <div class="table-cell">
+                        Unit Price
+                    </div>
+                    <div class="table-cell">
+                        Countdown
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Black Dress
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$199.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 2 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Red T-shirt
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$59.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 18 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Yellow Pants
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$19.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 08:12:33
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Green Hat
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$9.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 00:23:34
+                    </div>
+                </div>
+            </div>
+
+            <h5>Hovered styled table 悬停美化样式</h5>
+
+            <div class="table styled hovered full font-small">
+                <div class="table-head text-center">
+                    <div class="table-cell">
+                        Item
+                    </div>
+                    <div class="table-cell">
+                        Unit Price
+                    </div>
+                    <div class="table-cell">
+                        Countdown
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Black Dress
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$199.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 2 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Red T-shirt
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$59.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 18 days
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Yellow Pants
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$19.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 08:12:33
+                    </div>
+                </div>
+                <div class="table-row text-center">
+                    <div class="table-cell">
+                        Green Hat
+                    </div>
+                    <div class="table-cell">
+                        <span class="money">$9.99</span>
+                    </div>
+                    <div class="table-cell">
+                        Ends in 00:23:34
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>JavaScript 脚本部分</h3>
+
+    <div class="content">
+        <p>The selectors only support Id and Class, if you wanna use more selector, please import the jQuery.</p>
+    </div>
+
+    <script src="./dist/js/rainbow.min.js"></script>
+    <script src="./dist/js/vipui.js"></script>
+</body>
+
+</html>
